@@ -20,7 +20,7 @@ from plugins import *
 # Edit this settings
 class BotSettings(BaseSettings):
     USERS = (
-        ("group", "ТУТ ТОКЕН ГРУППЫ",),
+        ("group", "ТОКЕН",),
     )
 
     PROXIES = (
@@ -75,40 +75,40 @@ class BotSettings(BaseSettings):
         # LockChatPlugin("сохранять", prefixes=prefixes),
 
         # Can use `PeeweePlugin`:
-        RememberPlugin("напомни",prefixes=prefixes),  # use_db=True, if you can use PeeweePlugin
+        # # RememberPlugin("напомни",prefixes=prefixes),  # use_db=True, if you can use PeeweePlugin
 
         # Plugins:
-        VoterPlugin(prefixes=prefixes),
-        FacePlugin("сделай", prefixes=prefixes),
-        SmileWritePlugin("смайлами", prefixes=prefixes),
+        # # VoterPlugin(prefixes=prefixes),
+        # #FacePlugin("сделай", prefixes=prefixes),
+        # #SmileWritePlugin("смайлами", prefixes=prefixes),
         JokePlugin("а", "анекдот", prefixes=prefixes),
-        GraffitiPlugin("граффити", prefixes=prefixes),
-        QuotePlugin("цитатка"),
+        # #GraffitiPlugin("граффити", prefixes=prefixes),
+        # #QuotePlugin("цитатка"),
         WikiPlugin("что такое", prefixes=prefixes),
-        AnagramsPlugin(["анаграмма", "анаграммы"], prefixes=prefixes),
+        # #AnagramsPlugin(["анаграмма", "анаграммы"], prefixes=prefixes),
         HangmanPlugin(["виселица"], prefixes=prefixes),
         MembersPlugin("кто тут", prefixes=prefixes),
-        PairPlugin("кто кого", prefixes=prefixes),
+        # #PairPlugin("кто кого", prefixes=prefixes),
         WhoIsPlugin("кто", prefixes=prefixes),
         YandexNewsPlugin(["новости"], ["помощь", "категории", "?"], prefixes=prefixes),
         AboutPlugin("о боте", "инфа", prefixes=prefixes),
         BirthdayPlugin("дни рождения", "др", prefixes=prefixes),
         TimePlugin("время", prefixes=prefixes),
-        ToptextbottomtextPlugin("мем", "свой текст", prefixes=prefixes),
-        QRCodePlugin("qr", "кр", prefixes=prefixes),
-        ChatKickerPlugin(["кик"], ["фри", "анкик"], prefixes=prefixes, admins=admins, admins_only=True),
-        RandomPostPlugin({"random": "-111759315", "memes": "-77127883", "мемы": "-77127883"}, prefixes=prefixes),
+        # #ToptextbottomtextPlugin("мем", prefixes=prefixes),
+        # #QRCodePlugin("qr", "кр", prefixes=prefixes),
+        # #ChatKickerPlugin(["кик"], ["фри", "анкик"], prefixes=prefixes, admins=admins, admins_only=True),
+        # #RandomPostPlugin({"random": "-111759315", "memes": "-77127883", "мемы": "-77127883"}, prefixes=prefixes),
         CalculatorPlugin("посчитай", "посч", prefixes=prefixes),
-        VideoPlugin("видео", prefixes=prefixes),
-        DispatchPlugin("рассылка", prefixes=prefixes, admins=admins),
+        # #VideoPlugin("видео", prefixes=prefixes),
+        # #DispatchPlugin("рассылка", prefixes=prefixes, admins=admins),
         hp,
 
         # Needs tokens (see plugin's codes, some have defaults):
-        SayerPlugin(prefixes=prefixes),
+        # #SayerPlugin(prefixes=prefixes),
         # Audio2TextPlugin(key="token for api", prefixes=prefixes),
         # WeatherPlugin("погода", token="token for api", prefixes=prefixes),
         # EmotionsDetectorPlugin("лицо", key="token for api", prefixes=prefixes),
-        DialogflowPlugin(prefixes=prefixes),  # plugin for DialogflowPlugin (chatting, learning etc)
+        # #DialogflowPlugin(prefixes=prefixes),  # plugin for DialogflowPlugin (chatting, learning etc)
 
         # Plugins for bot's control
         AntifloodPlugin(),
@@ -117,3 +117,4 @@ class BotSettings(BaseSettings):
     )
 
     hp.add_plugins(PLUGINS)
+
