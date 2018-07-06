@@ -79,7 +79,7 @@ class Bot:
         result = None
         retries = 10
         for _ in range(retries):
-            result = await self.api(sender=self.api.target_client).messages.getLongPollServer(use_ssl=1, lp_version=2)
+            result = await self.api(sender=self.api.target_client).messages.getLongPollServer(use_ssl=1, lp_version=3)
 
             if result:
                 break
