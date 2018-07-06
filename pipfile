@@ -1,0 +1,31 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+
+
+[packages]
+requests
+aiohttp
+captcha_solver
+python-dateutil
+geopy
+xmltodict
+defusedxml
+Pillow
+qrcode
+peewee==3.5.2
+peewee_async
+aiomysql
+psycopg2-binary
+aiopg
+tinydb
+gTTS
+transliterate
+langdetect
+vk
+
+
+[requires]
+
+python_version = "3.6"
