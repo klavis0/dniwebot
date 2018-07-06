@@ -29,3 +29,5 @@ tinydb
 gTTS
 transliterate
 langdetect
+
+vk
