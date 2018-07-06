@@ -18,7 +18,7 @@ Pillow
 qrcode
 
 # Data and bases
-peewee==2.10.2
+peewee==3.5.2
 peewee_async
 aiomysql
 psycopg2-binary
